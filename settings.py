@@ -78,6 +78,7 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'jadb.urls'
 
 TEMPLATE_DIRS = (
+	'/Users/user/Development/django/jadb/templates'
 )
 
 INSTALLED_APPS = (
@@ -87,4 +88,6 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.admin',
+	'jadb.accounts',
+	'jadb.blog',
 )
