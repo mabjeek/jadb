@@ -7,7 +7,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     (r'^accounts/login$', auth_views.login),
     (r'^accounts/logout$', auth_views.logout),
-    (r'^accounts/profile$', ),
+    (r'^accounts/profile$', include('jadb.profile.urls')),
     (r'^admin/doc/', include('django.contrib.admindocs.urls')),
     (r'^admin/', include(admin.site.urls)),
 )
