@@ -82,7 +82,7 @@ TEMPLATE_DIRS = (
 	'/home/mabjeek/dev/jadb/templates',
 )
 
-LOGIN_REDIRECT_URL = "/logged_in"
+LOGIN_REDIRECT_URL = "profile"
 
 INSTALLED_APPS = (
     'django.contrib.auth',
@@ -90,6 +90,5 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.admin',
-    'jadb.accounts',
     'jadb.blog',
 )
