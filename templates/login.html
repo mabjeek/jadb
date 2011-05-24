@@ -1,6 +1,0 @@
-{% extends "base.html" %}
-{% block content %}
-	<form id="login_form" method="POST" action="/account/login"> {% csrf_token %}
-	{{ login_form.as_p }}
-	<input type="submit" name="login_action" value="Login" id="login_submit">
-{% endblock %}

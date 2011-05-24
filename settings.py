@@ -78,16 +78,18 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'jadb.urls'
 
 TEMPLATE_DIRS = (
-	'/Users/user/Development/django/jadb/templates'
+	'/Users/user/Development/django/jadb/templates',
+	'/home/mabjeek/dev/jadb/templates',
 )
+
+LOGIN_REDIRECT_URL = "/logged_in"
 
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
-    'django.contrib.messages',
     'django.contrib.admin',
-	'jadb.accounts',
-	'jadb.blog',
+    'jadb.accounts',
+    'jadb.blog',
 )
