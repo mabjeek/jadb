@@ -57,6 +57,9 @@ MEDIA_URL = ''
 # Examples: "http://foo.com/media/", "/media/".
 ADMIN_MEDIA_PREFIX = '/media/'
 
+STATICFILES_DIRS = ('/home/mabjeek/dev/jadb/static',)
+STATIC_URL = '/static/' 
+
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = '9z_%fbvxg0*l0gg^2#dy^e54&irbluw)+!th&nmep)2y&$d0ys'
 
@@ -90,5 +93,6 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.admin',
+    'django.contrib.staticfiles',
     'jadb.blog',
 )
